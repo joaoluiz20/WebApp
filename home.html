@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebApp_Seiren</title>
+    <link rel="stylesheet" href="home_style.css">
+    <script src="home.js" defer></script>
+</head>
+<body>
+        <div id="container">
+            
+          <header class="item">
+            <img class="logo" id="logo" src="res/logo_150x150.png">
+            <label class="text" id="titulo">Sistema de Chamados</label>
+          </header>
+
+          <aside class="item">
+            <label class="text" id="menu">Menu</label>
+            <label class="textM" id="Manutencao">Manutenção</label>
+            <label class="textM" id="TI">T.I</label>
+          </aside>
+
+          <article class="item">
+            <table id="chamados">
+              <thead>
+                <tr>
+                  <th>Nro</th>
+                  <th>Usuário</th>
+                  <th>Abertura</th>
+                  <th>Hora da Abertura</th>
+                  <th>Status</th>
+                  <th>Data do Fechamento</th>
+                  <th>Hora do Fechamento</th>
+                  <th>Atendente</th>
+                  <th>Restrito?</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!--Itens-->
+              </tbody>
+            </table>
+          </article>
+
+          <footer class="item">
+            <button class="button" id="incluir">Incluir</button>
+            <button class="button" id="alterar">Alterar</button>
+            <button class="button" id="excluir">Excluir</button>
+          </footer>
+        </div>
+        
+</body>
+</html>
