@@ -43,9 +43,25 @@ incluir.addEventListener('click', function() {
 
 document.getElementById('btnConfirmar').addEventListener('click', function() {
   overlay.classList.remove('ativo');
-  window.location.href = 'inclusao.html'; // troque pela sua página
+  window.location.href = 'inclusao.html';
 });
 
 document.getElementById('btnCancelar').addEventListener('click', function() {
   overlay.classList.remove('ativo');
 });
+
+//Botão Alterar
+const alterar = document.getElementById('alterar');
+
+alterar.addEventListener('click',function() {
+    overlay.classList.add('ativo');
+}
+
+)
+
+//Botão Excluir
+const excluir = document.getElementById('excluir');
+
+excluir.addEventListener('click',function () {
+    overlay.classList.add('ativo');
+})
