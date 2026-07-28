@@ -34,7 +34,18 @@ tabela.addEventListener('touchmove', (e) => {
 
 
 //Botão Incluir
-const incluir = document.getElementById(incluir)
-    incluir.addEventListener('click', function() {  
-        
-    })
+const incluir = document.getElementById('incluir');
+const overlay = document.getElementById('overlay');
+
+incluir.addEventListener('click', function() {
+  overlay.classList.add('ativo');
+});
+
+document.getElementById('btnConfirmar').addEventListener('click', function() {
+  overlay.classList.remove('ativo');
+  window.location.href = 'inclusao.html'; // troque pela sua página
+});
+
+document.getElementById('btnCancelar').addEventListener('click', function() {
+  overlay.classList.remove('ativo');
+});

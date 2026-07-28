@@ -139,3 +139,49 @@ footer {
     margin-top: 10px;
 }
 
+/* Modal */
+#overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+#overlay.ativo {
+  display: flex;
+}
+
+#modal-confirma {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  width: 320px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+#modal-confirma p {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.modal-botoes {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.modal-botoes button {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+#btnConfirmar { background: #28a745; color: white; }
+#btnCancelar  { background: #dc3545; color: white; }
