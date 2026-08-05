@@ -1,0 +1,55 @@
+
+#imagem {
+width: 30vw;
+height: 20vh;
+margin: 1px;
+}
+
+#Nchamado {
+    margin-top: 20dvb;
+    margin-right: 1px;
+    align-self: self-start;
+    height: 3vh;
+    width: 15vw;
+}
+
+#Tipo {
+    margin-right: 1px;
+    align-self: self-start;
+    height: 3vh;
+    width: 30vw;
+}
+
+#Evento {
+    margin-right: 2px;
+    align-self: self-start;
+    height: 3vh;
+    width: 30vw;
+}
+
+#Solicitacao {
+    align-self: self-start;
+    margin: 1px;
+    height: 30vh;
+    width: 75vw;
+}
+
+.button {
+    margin: 1px;
+    height: 5vh;
+    width: 20vw;
+}
+
+.text {
+    color: #707072;
+}
+
+body{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   min-height: 100vh;
+   margin: 0; 
+   background: linear-gradient(to top,#9aa6df,#2b3f9f)
+}
+
