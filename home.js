@@ -19,7 +19,7 @@ tabela.addEventListener('mousemove', (e) => {
     tabela.scrollLeft = scrollLeft - (x - startX) * 1.5;
 });
 
-// Touch (celular/tablet)
+// Touch (celular/tablet) - tabela
 let startTouchX, scrollLeftTouch;
 
 tabela.addEventListener('touchstart', (e) => {
@@ -32,36 +32,38 @@ tabela.addEventListener('touchmove', (e) => {
     tabela.scrollLeft = scrollLeftTouch - (x - startTouchX) * 1;
 }, { passive: false });
 
-
-//Botão Incluir
-const incluir = document.getElementById('incluir');
+// Overlay
 const overlay = document.getElementById('overlay');
+const overlayA = document.getElementById('overlayA');
 
-incluir.addEventListener('click', function() {
-  overlay.classList.add('ativo');
-});
-
-document.getElementById('btnConfirmar').addEventListener('click', function() {
-  overlay.classList.remove('ativo');
-  window.location.href = 'inclusao.html';
-});
-
-document.getElementById('btnCancelar').addEventListener('click', function() {
-  overlay.classList.remove('ativo');
-});
-
-//Botão Alterar
-const alterar = document.getElementById('alterar');
-
-alterar.addEventListener('click',function() {
-    overlay.classList.add('ativo');
+// Função auxiliar com Hammer (tap = click + touch)
+function addTouchClick(id, fn) {
+    const el = document.getElementById(id);
+    const hammer = new Hammer(el);
+    hammer.on('tap', fn);
 }
 
-)
-
-//Botão Excluir
-const excluir = document.getElementById('excluir');
-
-excluir.addEventListener('click',function () {
+// Botão Incluir
+addTouchClick('incluir', function() {
     overlay.classList.add('ativo');
-})
+});
+
+// Botão Alterar
+addTouchClick('alterar', function() {
+  overlayA.classList.add('ativo');
+});
+
+// Botão Excluir
+addTouchClick('excluir', function() {
+   overlay.classList.add('ativo'); 
+});
+
+// Botões do Modal
+addTouchClick('btnConfirmar', function() {
+    overlay.classList.remove('ativo');
+    window.location.href = 'inclusao.html';
+});
+
+addTouchClick('btnCancelar', function() {
+    overlay.classList.remove('ativo');
+});

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebApp_Seiren</title>
     <link rel="stylesheet" href="home_style.css">
+    <script src="https://cdn.jsdelivr.net/npm/hammerjs@2.0.8/hammer.min.js"></script>
     <script src="home.js" defer></script>
 </head>
 <body>
@@ -51,13 +52,15 @@
    
 <div id="overlay">
   <div id="modal-confirma">
-    <p>Deseja abrir um novo chamado?</p>
+    <p id="overlayTexto">Deseja abrir um novo chamado?</p>
     <div class="modal-botoes">
       <button id="btnConfirmar">Confirmar</button>
       <button id="btnCancelar">Cancelar</button>
     </div>
   </div>
 </div> 
+
+
   
 </body>
 </html>
