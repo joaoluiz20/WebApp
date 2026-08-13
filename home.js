@@ -45,11 +45,13 @@ function addTouchClick(id, fn) {
 
 // Botão Incluir
 addTouchClick('incluir', function() {
+    localStorage.setItem('titulo', 'Inclusão de Chamado');
     overlay.classList.add('ativo');
 });
 
 // Botão Alterar
 addTouchClick('alterar', function() {
+  localStorage.setItem('titulo', 'Alteração de Chamado');
   overlayA.classList.add('ativo');
 });
 

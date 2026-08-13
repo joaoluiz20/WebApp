@@ -1,7 +1,13 @@
 
-#imagem {
+#imagem1 {
 width: 30vw;
-height: 20vh;
+height: 30vh;
+margin: 1px;
+}
+
+#imagem2 {
+width: 30vw;
+height: 30vh;
 margin: 1px;
 }
 
@@ -11,6 +17,12 @@ margin: 1px;
     align-self: self-start;
     height: 3vh;
     width: 15vw;
+}
+
+#labelTitulo {
+   position: absolute;
+   top: 150px;
+   left: 125px;
 }
 
 #Tipo {
@@ -31,7 +43,7 @@ margin: 1px;
     align-self: self-start;
     margin: 1px;
     height: 30vh;
-    width: 75vw;
+    width: 77vw;
 }
 
 .button {
@@ -42,6 +54,12 @@ margin: 1px;
 
 .text {
     color: #707072;
+}
+
+.Titulo {
+    font-size: x-large;
+    font-weight: bold;
+    font-family: 'segoe UI', sans-serif;
 }
 
 body{

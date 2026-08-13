@@ -10,7 +10,7 @@
 <body>
     <div class="tela">
         <div class="Titulo">
-            <label class="titulo" id="titulo">XXXXXXX</label>
+            <label class="Titulo" id="labelTitulo">XXXXXXX</label>
         </div>
         <div class="linha_1">
             <textarea class="text" id="Nchamado">Chamado</textarea>
@@ -23,13 +23,16 @@
         </div>
 
         <div class="linha_3">
-            <img class="image" id="imagem" src="res/bkg.png">
-            <img class="image" id="imagem" src="res/bkg.png">
+            <input type="file" id="inputImagem1" accept="image/*" style="display:none">
+            <img class="image" id="imagem1" src="res/bkg.png" onclick="document.getElementById('inputImagem1').click()">
+
+            <input type="file" id="inputImagem2" accept="image/*" style="display:none">
+            <img class="image" id="imagem2" src="res/bkg.png" onclick="document.getElementById('inputImagem2').click()">
         </div>
 
         <div class="linha_4">
             <button class="button" id="salvar">Salvar</button>
-            <button class="button" id="salvar">Cancelar</button>
+            <button class="button" id="cancelar">Cancelar</button>
         </div>
 
     </div>
