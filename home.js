@@ -37,4 +37,4 @@ tabela.addEventListener('touchmove', (e) => {
 const incluir = document.getElementById(incluir)
     incluir.addEventListener('click', function() {  
         
-    })
+    });
