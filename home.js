@@ -75,4 +75,3 @@ addTouchClick('btnConfirmar', function() {
 addTouchClick('btnCancelar', function() {
     overlay.classList.remove('ativo');
 });
->>>>>>> Teste-botoes
