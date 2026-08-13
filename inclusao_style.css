@@ -1,13 +1,13 @@
 
 #imagem1 {
 width: 30vw;
-height: 30vh;
+height: 20vh;
 margin: 1px;
 }
 
 #imagem2 {
 width: 30vw;
-height: 30vh;
+height: 20vh;
 margin: 1px;
 }
 
@@ -21,8 +21,8 @@ margin: 1px;
 
 #labelTitulo {
    position: absolute;
-   top: 150px;
-   left: 125px;
+   top: 135px;
+   left: 35px;
 }
 
 #Tipo {
