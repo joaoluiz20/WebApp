@@ -36,12 +36,6 @@ tabela.addEventListener('touchmove', (e) => {
 const overlay = document.getElementById('overlay');
 const overlayA = document.getElementById('overlayA');
 
-//Botão Incluir
-const incluir = document.getElementById(incluir)
-    incluir.addEventListener('click', function() {  
-        
-    });
-
 // Função auxiliar com Hammer (tap = click + touch)
 function addTouchClick(id, fn) {
     const el = document.getElementById(id);
@@ -57,13 +51,13 @@ addTouchClick('incluir', function() {
 
 // Botão Alterar
 addTouchClick('alterar', function() {
-  localStorage.setItem('titulo', 'Alteração de Chamado');
-  overlayA.classList.add('ativo');
+    localStorage.setItem('titulo', 'Alteração de Chamado');
+    overlayA.classList.add('ativo');
 });
 
 // Botão Excluir
 addTouchClick('excluir', function() {
-   overlay.classList.add('ativo'); 
+    overlay.classList.add('ativo');
 });
 
 // Botões do Modal
