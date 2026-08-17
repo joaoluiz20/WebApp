@@ -12,19 +12,38 @@ height: 20vh;
 margin: 1px;
 }
 
+@media (max-width: 600px) {
+    #Nchamado {
+        width: 20vw;
+        min-width: 100px;
+    }
+    #Tipo,
+    #Evento {
+        width: 35vw;
+        min-width: 90px;
+        font-size: 12px;
+    }
+
+    #Solicitacao {
+        width: 90vw;
+        height: 25vh;
+    }
+
+    .linha_1 {
+        flex-wrap: nowrap;
+        gap: 4px;
+    }
+}
+
 #Nchamado {
-    margin-top: 20dvb;
     margin-right: 1px;
     align-self: self-start;
     height: 3vh;
     width: 15vw;
+    resize: none;
+    overflow: hidden;
 }
 
-#labelTitulo {
-   position: absolute;
-   top: 135px;
-   left: 35px;
-}
 
 #Tipo {
     margin-right: 1px;
@@ -45,28 +64,14 @@ margin: 1px;
     margin: 1px;
     height: 30vh;
     width: 77vw;
-}
-
-.button {
-    margin: 1px;
-    height: 5vh;
-    width: 20vw;
-}
-
-.text {
-    color: #707072;
-}
-
-.Titulo {
-    font-size: x-large;
-    font-weight: bold;
-    font-family: 'segoe UI', sans-serif;
+  
 }
 
 body{
    display: flex;
    flex-direction: column;
    align-items: center;
+   justify-content: center;
    min-height: 100vh;
    margin: 0; 
    background: linear-gradient(to top,#9aa6df,#2b3f9f)
@@ -80,7 +85,7 @@ body{
     -webkit-tap-highlight-color: transparent;
 }
 
-/* Botões */
+
 .button {
     border-radius: 50px;
     background-color: #d9d9d9;
@@ -97,7 +102,7 @@ body{
     background-color: #c0c0c0;
 }
 
-/* Campos de texto (textarea e input) */
+
 .text {
     border-radius: 12px;
     border: 1px solid #c7c7cc;
@@ -121,10 +126,45 @@ body{
     cursor: pointer;
 }
 
-/* Título XXXXXXX / label */
 .Titulo {
     font-size: 22px;
     font-weight: 700;
     color: #000;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    width: 100%;
+    text-align: left;
+    margin: 0 0 12px 3px;
+}
+
+.tela {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.campo select {
+    border: 1px solid #d7d7d7;
+    background: #fff;
+    box-sizing: border-box;
+    font-size: 14px;
+    height: 24px;
+    width: 100%;
+    color: #333;
+    cursor: pointer;
+}
+
+.linha_1 {
+    display: flex;
+    align-items: center;
+    width: 77vw;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+#Nchamado,
+#Tipo,
+#Evento {
+    height: 40px;
+    margin: 0; /* remove margin-top: 20dvb e outros que desalinham */
 }
