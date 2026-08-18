@@ -6,6 +6,13 @@
     -webkit-tap-highlight-color: transparent;
 }
 
+@media(max-width: 600px) {
+    #card{
+        width: 95vw;
+        height: 25vh;
+    }
+}
+
 .card {
     background-color: #ffffff;
     border-radius: 20px;

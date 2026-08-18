@@ -3,6 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+@media (max-width: 600px) {
+    #container{
+        width: 95vw;
+        height: 25vh;
+    }
+
+}
 
 #incluir {
     margin-top: 1vh;
